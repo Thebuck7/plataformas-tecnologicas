@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plataformas-tecnologicas';
+
+  content: number = 0;
+  
+  changeContent(numb: number) {
+    this.content = numb;
+    return this.content;
+  }
+
+  scroll(el:HTMLElement){
+    el.scrollIntoView()
+  }
+
 }
